@@ -1,12 +1,12 @@
 import { useState } from "react";
 import "./App.css";
-import a from "./data";
+import data from "./data";
 import { Button, Navbar, Container, Nav, Row, Col } from "react-bootstrap";
 // import bg from "./asset/main.png";
 // import {a,b} from '경로' // import 여러개 하려면
 
 function App() {
-	let [clothes] = useState();
+	let [clothes] = useState(data);
 
 	return (
 		<div className="App">
@@ -40,8 +40,8 @@ function App() {
 							width="60%"
 							height="60%"
 						/>
-						<h4>상품명</h4>
-						<p>상품설명</p>
+						<h4>{data[0].title}</h4>
+						<p>{data[0].content}</p>
 					</Col>
 					<Col>
 						<img
