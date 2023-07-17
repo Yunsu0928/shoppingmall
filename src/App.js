@@ -42,6 +42,7 @@ function App() {
 						/>
 						<h4>{data[0].title}</h4>
 						<p>{data[0].content}</p>
+						<p>{data[0].price}</p>
 					</Col>
 					<Col>
 						<img
