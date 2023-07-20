@@ -24,6 +24,9 @@ function App() {
 						<Nav.Link to="/about" href="about">
 							About
 						</Nav.Link>
+						<Nav.Link to="/mypage" href="mypage">
+							My Page
+						</Nav.Link>
 					</Nav>
 				</Container>
 			</Navbar>
@@ -36,6 +39,7 @@ function App() {
 				<Route path="/" element={<Main />} />
 				<Route path="/detail" element={<div>상세페이지</div>} />
 				<Route path="/about" element={<div>어바웃페이지</div>} />
+				<Route path="/mypage" element={<div>마이페이지</div>} />
 			</Routes>
 
 			{/* <div
