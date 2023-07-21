@@ -1,4 +1,6 @@
 import "./App.css";
+import { useState } from "react";
+import data from "./data";
 import { Button, Navbar, Container, Nav, Row } from "react-bootstrap";
 import { Routes, Route, Link, useNavigate, Outlet } from "react-router-dom";
 import Main from "./components/Main";
@@ -10,6 +12,7 @@ import Event from "./pages/Event";
 // import {a,b} from '경로' // import 여러개 하려면
 
 function App() {
+	let [clothes] = useState(data);
 	// hook // 페이지 이동을 도와주는 함수
 	// Link를 사용하게 되면 a태그가 만들어지기때문에 디자인적으로 별로 번거로움
 	// <Link onClick={()=>{ navigate('/detail')}}>Detail</Link>
@@ -73,7 +76,10 @@ function App() {
 
 			<Routes>
 				<Route path="/" element={<Main />} />
-				<Route path="/detail" element={<Detail />} />
+				<Route path="/detail/:id" element={<Detail clothes={clothes} />} />
+				{/* <Route path="/detail/:id" element={<Detail />} /> */}
+				{/* /:id 이걸 URL 파라미터라고 한다 detail 뒤에 어떤 내용을 붙여도 Detail페이지를 보여준다 */}
+				{/* <Route path="/detail" element={<Detail clothes={clothes}/>} /> */}
 				{/* <Route path="/about" element={<About />} /> */}
 				{/* <Route path="/about/member" element={<div>어바웃안의페이지</div>} /> */}
 				{/* Nested Routes 방법 태그 안에 태그가 들어간 방법 */}
