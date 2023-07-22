@@ -6,6 +6,10 @@
 	background-position: center;
 }
 
+.alert-warning {
+	background-color: yellow;
+}
+
 .App {
 	text-align: center;
 }
