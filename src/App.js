@@ -28,7 +28,7 @@ function App() {
 			</div> */}
 			<Navbar bg="dark" data-bs-theme="dark">
 				<Container>
-					<Navbar.Brand href="#home">Hong Shopping</Navbar.Brand>
+					<Navbar.Brand href="/">Hong Shopping</Navbar.Brand>
 					<Nav className="me-auto">
 						{/* <Nav.Link to="/" href="/">Home</Nav.Link> */}
 						<Nav.Link
@@ -40,7 +40,7 @@ function App() {
 						</Nav.Link>
 						<Nav.Link
 							onClick={() => {
-								navigate("/detail");
+								navigate("/detail/0");
 							}}
 						>
 							Detail
