@@ -12,6 +12,7 @@ function Item({ clothes }) {
 							alt="clothes1"
 							width="30%"
 							height="30%"
+							onClick={() => {}}
 						/>
 						<h4>{e.title}</h4>
 						<p>{e.content}</p>
