@@ -92,6 +92,7 @@ function App() {
 				<Route path="/event" element={<Event />}>
 					<Route path="one" element={<div>첫 주문 시 양배추즙 서비스</div>} />
 					<Route path="two" element={<div>생일기념 쿠폰 받기</div>} />
+					<Route path="three" element={<div>1주년 기념 쿠폰 받기</div>} />
 				</Route>
 			</Routes>
 			{/* 이상한 페이지로 접근했을떄 404에러페이지가 뜨도록 하는 방법 */}
