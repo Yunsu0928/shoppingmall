@@ -10,8 +10,23 @@
 	background-color: yellow;
 }
 
+.col {
+	display: flex;
+	justify-content: center;
+}
+
+.flex {
+	display: flex;
+	flex-direction: column;
+}
+
+.buttonStyle {
+	/* width: 30%; */
+}
+
 .App {
 	text-align: center;
+	overflow: scroll;
 }
 
 .App-logo {
