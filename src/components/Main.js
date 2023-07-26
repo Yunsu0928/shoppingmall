@@ -31,7 +31,7 @@ function Main() {
 								// 로딩중 ui 숨기기
 							})
 							.catch(() => {
-								console.log("실패했음");
+								console.log("실패했습니다");
 								// 로딩중 ui 숨기기
 							});
 
