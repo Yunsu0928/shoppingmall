@@ -36,6 +36,12 @@ function Main() {
 								// 로딩중 ui 숨기기
 							});
 
+						// fetch는 json데이터를 가져왔을때 json을 그대로 출력해주기 때문에 JSON>array/object변환과정이 필요하다
+						// fetch("https://codingapple1.github.io/shop/data2.json")
+						// .then(result => result.json()) // JSON>array/object변환과정이 필요하다
+						// .then(data => {})
+						// 그래서 axios가 fetch보다 편리하다고 볼 수 있다 (JSON데이터를 한 번 더 변환해주지 않아도 돼서)
+
 						// 동시에 ajax요청 여러개 하려면
 						// Promise.all([axios.get('/url1'), axios.get('/url2')])
 						// promiseall안에 모두가 성공하면 코드를 실행하고 싶을때
