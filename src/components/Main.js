@@ -26,6 +26,7 @@ function Main() {
 								console.log(result.data);
 								console.log(clothes);
 								// clothes에 가져온 데이터 추가하기
+								// 기존 데이터를 복사해서 사용하기
 								let copy = [...clothes, ...result.data];
 								setClothes(copy);
 								// 로딩중 ui 숨기기
