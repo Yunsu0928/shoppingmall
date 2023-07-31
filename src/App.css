@@ -1,3 +1,19 @@
+.start {
+	/* opacity: 0; */
+	/* opacity 투명도주는 스타일 */
+	transform: scale(0);
+	/* 작아졌다가 크게 만들어주는 스타일 */
+}
+
+.end {
+	/* opacity: 1;
+	transition: opacity 1s; */
+	/* transition 애니메이션 주는 스타일 : opacity가 변경될때 0.5초에 걸쳐서 변경해주세요*/
+
+	transform: scale(1);
+	transition: all 0.5s;
+}
+
 .main-bg {
 	height: 300px;
 	background-image: url(./asset/main.png);
@@ -22,6 +38,12 @@
 
 .buttonStyle {
 	/* width: 30%; */
+}
+
+.product_detail {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .App {
